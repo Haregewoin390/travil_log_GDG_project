@@ -21,6 +21,7 @@
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.3",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "rate-limit-mongo": "^2.3.2"
   }
 }

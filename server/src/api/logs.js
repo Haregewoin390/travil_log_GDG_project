@@ -11,16 +11,7 @@ const {
 
 const router = Router();
 
-// const rateLimitDelay = 10 * 1000; // 10 second delay
-// const limiter = new RateLimit({
-//   store: new MongoStore({
-//     uri: DATABASE_URL,
-//     expireTimeMs: rateLimitDelay,
-//   }),
-//   max: 1,
-//   windowMs: rateLimitDelay
-// });
-//async 
+
 router.get('/', async (req, res, next) => {
   try {
     const entries = await LogEntry.find();
@@ -30,7 +21,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.post('/', limiter, async (req, res, next) => {
+router.post('/', async (req, res, next) => {
   try {
     if (req.get('X-API-KEY') !== API_KEY) {
       res.status(401);

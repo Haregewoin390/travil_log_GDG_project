@@ -17,10 +17,10 @@ a MERN stalk travel log project for GDG  code camp
     * Longitude - Number
     * Created At - DateTime
     * Updated At - DateTime
-* [] Setup Mongoose Model(s)
-* [] POST /logs
+* [x] Setup Mongoose Model(s)
+* [x] POST /logs
   * Create a new log entry
-* [] GET / logs
+* [x] GET / logs
   * List all log entries
 * [] Setup Client
 * [] Create Form to add a new entry
